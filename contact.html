@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/css/style/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <style>
+        html,body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family:Sans-serif;
+            line-height: 1.5em;
+        }
+
+        .footer,
+        .push {
+            height: 50px;
+        }
+
+        .container {
+            padding-left: 200px;
+            padding-right: 190px;
+            min-height: calc(100% - 80px);
+            margin-bottom: -50px;
+        }
+
+        .container .column {
+            position: relative;
+            float: left;
+        }
+
+        .center {
+            padding: 10px 20px;
+            width: 100%;
+        }
+
+        .left {
+            width: 180px;
+            padding: 0 10px;
+            right: 240px;
+            margin-left: -100%;
+        }
+
+        .right {
+            width: 130px;
+            padding: 0 10px;
+            margin-right: -100%;
+        }
+
+        .footer {
+            clear: both;
+        }
+        .container {
+            overflow: hidden;
+        }
+        .container .column {
+            padding-bottom: 1001em;
+            margin-bottom: -1000em;
+        }
+
+        .footer-wrapper {
+            float: left;
+            position: relative;
+            width: 100%;
+            background: #fff;
+        }
+
+        p {
+            color: #555;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul a {
+            color: darkgreen;
+            text-decoration: none;
+        }
+        .header, .footer {
+            font-size: large;
+            padding: 0.3em;
+            background: #BCCE98;
+        }
+        .header{
+            height: 60px;
+        }
+
+        .left {
+            background: #DAE9BC;
+        }
+        .right {
+            background: #F7FDEB;
+        }
+        .center {
+            background: #fff;
+        }
+        .container .column {
+            padding-top: 1em;
+        }
+        img{
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+<header class="header"><p>Header...</p></header>
+<img src="public/images/logo-design.png" alt="No image">
+<div class="container">
+    <main class="center column">
+        <article>
+            <h1>Heading</h1>
+            <p></p>
+        </article>
+    </main>
+    <nav class="left column">
+        <h1>Contact</h1>
+        <a href="index.html">Main</a>
+        <br>
+        <a href="about.html">About</a>
+        <br>
+        <a href="contact.html">Contact</a>
+        <br>
+        <a href="media.html">Media</a>
+        <br>
+        <a href="slider.html">Slider</a>
+        <br>
+        <a href="table.html">Table</a>
+        <div class="container">
+            <div class="contact-box">
+                <div class="left"></div>
+                <div clss="right">
+                    <input type="text" class="field" placeholder="Your name">
+                    <br>
+                    <input type="date"class = "field" placeholder="Birthday">
+                    <br>
+                    <input type="email" class="field" placeholder="Your email">
+                    <br>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <br>
+                    <input type="number" class="field" placeholder="Your phone">
+                    <br>
+                    <input type="password" class="field" placeholder="Your password">
+                    <br>
+                    <input type="checkbox" id="accept" name="accept" value="conditions">
+                    <label for="accept"> I accept terms and conditions</label><br>
+                    <label for="notes">Notes:</label>
+                    <textarea id="notes" name = "notes"
+                              rows="5"columns="33">
+    </textarea>
+                    <br>
+                    <label for="photo">Download your photo:</label>
+                    <input type="file"id="photo" name="photo"
+                           accept="image/png, image/jpeg">
+                    <br>
+                    <form action="contact.html">
+                        <input type="submit" value="Submit" name="submit">
+                    </form>
+    </nav>
+    <div class="right column">
+        <h3>Right heading</h3>
+        <p></p>
+    </div>
+</div>
+<div class="footer-wrapper">
+    <footer class="footer"><p>Footer...</p></footer>
+</div>
+
+</body>
+</html>
